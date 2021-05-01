@@ -14,12 +14,35 @@ namespace Grokar
     {
         public Login()
         {
-            InitializeComponent();
+           InitializeComponent();
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
+            txtUser.Focus();
+        }
 
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            var user = txtUser.Text;
+            var password = txtPassword.Text;
+            try
+            {
+                if (user == "adrianne" && password == "123456")
+                {
+                    this.Hide();
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

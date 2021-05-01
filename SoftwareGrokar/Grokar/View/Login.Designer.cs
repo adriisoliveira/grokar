@@ -87,6 +87,7 @@ namespace Grokar
             this.btnEnter.TabIndex = 4;
             this.btnEnter.Text = "Enter";
             this.btnEnter.UseVisualStyleBackColor = false;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // btnCancel
             // 
@@ -99,6 +100,7 @@ namespace Grokar
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label1
             // 
